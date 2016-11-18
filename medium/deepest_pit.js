@@ -2,7 +2,7 @@ function solution(A) {
     let p = 0;
     let q = -1;
     let r = -1;
-    let max_depth = 0;
+    let max_depth = -1;
     for(let i = 1; i < A.length; i++){
         if(q < 0 && A[i] >= A[i-1]){
             q = i-1;
